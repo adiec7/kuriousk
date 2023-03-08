@@ -1,12 +1,13 @@
-import { Navbar,Container,NavDropdown,Nav } from "react-bootstrap";
-import  'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from "../component/kuriousklogo.jpg"
-export const NavBar = ()=>{
-    return(
-        <Navbar bg="primary" expand="lg">
+import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../component/kuriousklogo.jpg";
+export const NavBar = () => {
+  return (
+    <Navbar bg="primary" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} alt="Logo" className="logo"/></Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img src={logo} alt="Logo" className="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" text="primary">
@@ -28,8 +29,8 @@ export const NavBar = ()=>{
           </Nav>
         </Navbar.Collapse>
       </Container>
-      </Navbar>
-    )
-}
+    </Navbar>
+  );
+};
 
-export default NavBar
+export default NavBar;
