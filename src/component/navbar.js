@@ -1,35 +1,53 @@
-import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar,Container,Offcanvas,Nav,NavDropdown,Form,Button } from "react-bootstrap";
 import logo from "../component/kuriousklogo.jpg";
 export const NavBar = () => {
   return (
-    <Navbar bg="primary" expand="lg" fixed="top">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" className="logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto" text="primary">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
-            <Nav.Link href="#link">Episodes</Nav.Link>
-            <NavDropdown title="Subscribe" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Spotify</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Apple podcast
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Youtube</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                google podcast
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      {[false].map((expand) => (
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="mb-3 container fixed-bottom bg-light rounded"
+        >
+          <Container fluid>
+            <Navbar.Brand href="#">
+              <img src={logo} alt="brand logo" className="logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Kurious K Media
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <NavDropdown
+                    title="Dropdown"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
   );
 };
 

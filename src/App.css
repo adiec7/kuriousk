@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
+
+
+body{
+  overflow: hidden;
+  font-family: 'Newsreader', serif;
+}
 .logo {
   width: 12rem;
+}
+/* carousel text */
+h3{
+color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 nav a.nav-link {
   color: whitesmoke;
-}
-
-/* Landing page styles */
-.header_img {
-  position: relative;
-  background-image: url(./component/img/will-francis-ZDNyhmgkZlQ-unsplash.jpg);
-  background-size: cover;
-  height: 100vh;
 }
 
 .header_info {
@@ -34,4 +40,16 @@ nav a.nav-link {
 
 .button {
   background-color: red !important;
+}
+
+/* carousel */
+.img-fluid{
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow:  hidden !important;
+}
+
+.carousel-caption,h3{
+  top: 60%;
+    transform: translateY(-50%);
 }
