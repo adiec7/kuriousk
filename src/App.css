@@ -50,6 +50,6 @@ nav a.nav-link {
 }
 
 .carousel-caption,h3{
-  top: 60%;
+  top: 40%;
     transform: translateY(-50%);
 }
