@@ -7,7 +7,7 @@ export const NavBar = () => {
         <Navbar
           key={expand}
           expand={expand}
-          className="mb-3 container fixed-bottom bg-light rounded"
+          className="mb-3 container fixed-top  rounded"
         >
           <Container fluid>
             <Navbar.Brand href="#">

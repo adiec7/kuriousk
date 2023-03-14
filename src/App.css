@@ -4,6 +4,7 @@
 body{
   overflow: hidden;
   font-family: 'Newsreader', serif;
+  overflow: hidden;
 }
 .logo {
   width: 12rem;
@@ -44,8 +45,8 @@ nav a.nav-link {
 
 /* carousel */
 .img-fluid{
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 100% !important;
+  height: auto !important;
   overflow:  hidden !important;
 }
 
