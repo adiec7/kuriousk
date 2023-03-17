@@ -29,7 +29,7 @@ export const NavBar = () => {
                   <Nav.Link href="#action1">Home</Nav.Link>
                   <Nav.Link href="#action2">Podcast</Nav.Link>
                   <Nav.Link href="#action3">Event</Nav.Link>
-                  <Nav.Link href="#action4">Theme pack</Nav.Link>
+                  <Nav.Link href="#action4">Theme park</Nav.Link>
                   <Nav.Link href="#action5">merchandise</Nav.Link>
                   <Nav.Link href="#action6">Movies</Nav.Link>
                   <NavDropdown

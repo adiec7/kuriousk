@@ -16,11 +16,18 @@ const LandingPage = () => {
           alt="First slide"
         />
         <Carousel.Caption className="mb-5">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <div className="text-center">
+            <h3>Welcome to Kurious K Media</h3>
+            <p>
+              Kurious K is a media and entertainment company set to tell unique
+              African stories across various platforms, including podcasts,
+              movies, TV shows, newsletters, and theme parks. 
+            </p>
+            <Button variant="success btn btn-lg">Read more</Button>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           className="d-block w-100 img-fluid"
@@ -29,8 +36,8 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Kurious K Podcast</h3>
+          <p>Sharing African startup Stories</p>
           <Button variant="success btn btn-lg">Read more</Button>
         </Carousel.Caption>
       </Carousel.Item>
@@ -42,11 +49,11 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Kurius K Events</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <Button variant="success btn btn-lg">Coming Soon</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -57,11 +64,11 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Kurious K merchandise</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <Button variant="success btn btn-lg">Coming Soon</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -72,11 +79,11 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption variant="lead">
-          <h3>Third slide label</h3>
+          <h3>Kurious K Theme park</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <Button variant="success btn btn-lg">Coming Soon</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -87,11 +94,11 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3 className="d">Third slide label</h3>
+          <h3 className="d">Kurious K Movies</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <Button variant="success btn btn-lg">Coming Soon</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
