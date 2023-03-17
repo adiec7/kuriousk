@@ -53,10 +53,20 @@ nav a.nav-link {
   top: 50%;
     transform: translateY(-50%);
 }
-
-.navbar-toggler-icon{
-  color: red !important;
+button.navbar-toggler{
+  background-color: #02B5E3ff;
+  color: #fff !important;
 }
-.navbar-toggler{
-  background-image: unset;
+
+ span.navbar-toggler-icon{
+  color: red !important;
+
+
+} 
+.btn-lg{
+  background-color:#02B5E3ff;
+  border: black;
+}
+.btn-lg:hover{
+  background-color: black;
 }

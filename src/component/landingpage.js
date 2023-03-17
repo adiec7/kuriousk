@@ -5,7 +5,7 @@ import Homeimg from "../component/img/merch.jpg";
 import Eventimg from "../component/img/event.jpg";
 import Mercahndiseimg from "../component/img/merchandise.jpg";
 import Themeparkimg from "../component/img/themepark.jpg";
-import Moviesimg from "../component/img/movie.png";
+import Moviesimg from "../component/img/movie.jpg";
 const LandingPage = () => {
   return (
     <Carousel fade interval={5000}>
