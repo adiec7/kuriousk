@@ -4,7 +4,6 @@
 body{
   overflow: hidden;
   font-family: 'Newsreader', serif;
-  overflow: hidden;
 }
 .logo {
   width: 12rem;
@@ -45,12 +44,19 @@ nav a.nav-link {
 
 /* carousel */
 .img-fluid{
-  width: 100% !important;
-  height: auto !important;
-  overflow:  hidden !important;
+  width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .carousel-caption,h3{
-  top: 40%;
+  top: 50%;
     transform: translateY(-50%);
+}
+
+.navbar-toggler-icon{
+  color: red !important;
+}
+.navbar-toggler{
+  background-image: unset;
 }
