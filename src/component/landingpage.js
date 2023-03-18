@@ -21,9 +21,9 @@ const LandingPage = () => {
             <p>
               Kurious K is a media and entertainment company set to tell unique
               African stories across various platforms, including podcasts,
-              movies, TV shows, newsletters, and theme parks. 
+              movies, TV shows, newsletters, and theme parks.
             </p>
-            <Button variant="success btn btn-lg">Read more</Button>
+            <Button variant="success btn btn-lg mt-5">Read more</Button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -38,7 +38,7 @@ const LandingPage = () => {
         <Carousel.Caption>
           <h3>Kurious K Podcast</h3>
           <p>Sharing African startup Stories</p>
-          <Button variant="success btn btn-lg">Read more</Button>
+          <Button variant="success btn btn-lg mt-5">Visit Podcast</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -51,9 +51,10 @@ const LandingPage = () => {
         <Carousel.Caption>
           <h3>Kurius K Events</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Kurious K Events specializes in organizing and managing corporate
+            events, conferences, trade shows, and other large-scale gatherings.
           </p>
-          <Button variant="success btn btn-lg">Coming Soon</Button>
+          <Button variant="success btn btn-lg mt-5">Work With Us</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -64,11 +65,12 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3>Kurious K merchandise</h3>
+          <h3>Kurious K Merch</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            We offer a wide range of branded merchandise for Kurious K Media
+            Products.
           </p>
-          <Button variant="success btn btn-lg">Coming Soon</Button>
+          <Button variant="success btn btn-lg mt-5">Shop Online</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -78,12 +80,14 @@ const LandingPage = () => {
           alt="Third slide"
         />
 
-        <Carousel.Caption variant="lead">
-          <h3>Kurious K Theme park</h3>
+        <Carousel.Caption>
+          <h3>Kurious K Theme parks</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Our mission is to create theme parks that offer visitors an
+            unforgettable adventure while promoting African culture and
+            heritage.
           </p>
-          <Button variant="success btn btn-lg">Coming Soon</Button>
+          <Button variant="success btn btn-lg mt-5">Read More</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -94,11 +98,12 @@ const LandingPage = () => {
         />
 
         <Carousel.Caption>
-          <h3 className="d">Kurious K Movies</h3>
+          <h3 className="d">Kurious K Studios</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            we aim to differentiate ourselves and become a leading player in the
+            African film industry.
           </p>
-          <Button variant="success btn btn-lg">Coming Soon</Button>
+          <Button variant="success btn btn-lg mt-5">Coming Soon</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
