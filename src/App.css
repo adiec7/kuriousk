@@ -64,6 +64,7 @@ nav a.nav-link {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
+
 button.navbar-toggler{
   background-color: #02B5E3ff;
   color: #fff !important;
@@ -122,4 +123,9 @@ button.navbar-toggler{
     p {
       font-size: 1rem;
     }
+    p.carousel-caption {
+     text-align: left !important;
+     padding-left: 1rem !important;
+     padding-right: 1rem !important;
+   }
 }

@@ -1,4 +1,4 @@
-import { Navbar,Container,Offcanvas,Nav,NavDropdown,Form,Button } from "react-bootstrap";
+import { Navbar,Container,Offcanvas,Nav,NavDropdown,} from "react-bootstrap";
 import logo from "../component/kuriousklogo.jpg";
 export const NavBar = () => {
   return (
@@ -32,6 +32,7 @@ export const NavBar = () => {
                   <Nav.Link href="#action4">Theme park</Nav.Link>
                   <Nav.Link href="#action5">merchandise</Nav.Link>
                   <Nav.Link href="#action6">Movies</Nav.Link>
+                  <Nav.Link href="#action6">Contact Us</Nav.Link>
                   <NavDropdown
                     title="Podcast"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
