@@ -1,0 +1,15 @@
+.logo {
+    width: 12rem;
+}
+nav a.nav-link {
+    color: whitesmoke;
+}
+button.navbar-toggler {
+    background-color: #02B5E3ff;
+    color: #fff !important;
+}
+a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: .8rem;
+}

@@ -1,15 +1,15 @@
-import NavBar from "./component/navbar";
-import LandingPage from "./component/landingpage";
-// import LandingEpisodes from "./component/landingEpisodes";
+
+import LandingPage from "./component/carousel/landingpage";
+import Podcast from "./component/podcast/Podcast";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <LandingPage />
-      {/* <LandingEpisodes /> */}
-    </>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/Podcast" element={<Podcast />} />
+      </Routes>
   );
 }
 

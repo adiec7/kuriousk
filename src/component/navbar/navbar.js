@@ -1,5 +1,7 @@
-import { Navbar,Container,Offcanvas,Nav,NavDropdown,} from "react-bootstrap";
-import logo from "../component/kuriousklogo.jpg";
+import { Navbar,Container,Offcanvas,Nav,NavDropdown} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import logo from "../img/kuriousklogo.jpg";
+import './navbar.css'
 export const NavBar = () => {
   return (
     <>
@@ -10,10 +12,17 @@ export const NavBar = () => {
           className="mb-3 container fixed-top  rounded-bottom "
         >
           <Container fluid>
-            <Navbar.Brand href="#">
-              <img src={logo} alt="brand logo" className="logo" />
+            <Navbar.Brand>
+              <Link to="/">
+                <img src={logo} alt="brand logo" className="logo" />
+              </Link>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+
+            <Navbar.Toggle
+              className="navbar-toggler"
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+            />
+
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -21,13 +30,13 @@ export const NavBar = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Kurious K Media
+                  <Link to="/">Kurious K Media</Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Podcast</Nav.Link>
+                  <Link to="/">Home</Link>
+                  <Link to="/Podcast">Podcast</Link>
                   <Nav.Link href="#action3">Event</Nav.Link>
                   <Nav.Link href="#action4">Theme park</Nav.Link>
                   <Nav.Link href="#action5">merchandise</Nav.Link>
