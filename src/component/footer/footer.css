@@ -5,9 +5,15 @@
 .footer-card a {
     color: white !important;
 }
+.footer-img {
+    width: 100px;
+}
 .footer-react-icons {
     vertical-align: middle;
     font-size: 2rem !important;
     margin-left: .3rem !important;
     color:whitesmoke !important;
+}
+.footer-react-icons:hover{
+    color: wheat !important;
 }

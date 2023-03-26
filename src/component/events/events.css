@@ -44,9 +44,10 @@ div.events_text p{
     background-color: wheat;
     color: black;
 }
-.footer-img{
-    width: 100px;
+.pageSpan{
+    color: wheat;
 }
+
 
 @media screen and (max-width: 700px) {
         div.events_text {
