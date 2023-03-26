@@ -1,7 +1,7 @@
 import NavBar from "../navbar/navbar";
 import './events.css';
 import Footer from "../footer/footer";
-import Startupimg from "../img/startup.jpg";
+import Startupimg from "../img/startup.png";
 import Cooperateimg from "../img/cooperate.png";
 import { Card,CardGroup, Row,Col} from "react-bootstrap";
 const EventsPage = () => {
