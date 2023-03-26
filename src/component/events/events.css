@@ -33,7 +33,9 @@ div.events_text p{
 .card_text{
     background-color: #02B5E3ff;
     color: whitesmoke;
+    overflow: hidden;
 }
+
 .card-btn{
     background-color: black;
     color: whitesmoke;
