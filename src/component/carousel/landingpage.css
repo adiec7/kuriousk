@@ -9,11 +9,7 @@
     align-items: center;
     text-align: center;
 }
-.header_info h1 {
-    color: whitesmoke;
-    text-transform: uppercase;
-    margin-top: 20%;
-}
+
 .img-fluid {
     width: 100vw;
     height: 100vh;
@@ -23,7 +19,7 @@
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
+    color: whitesmoke;
     /* position: absolute; */
     z-index: 20;
     top: 50%;
@@ -48,6 +44,12 @@
     right: 0;
     background: rgba(0, 0, 0, 0.7);
 }
+h3 {
+    color: whitesmoke;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
 
 .btn-lg {
     background-color: #02B5E3ff;
@@ -58,24 +60,27 @@
 .btn-lg:hover {
     background-color: black;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 700px) {
     .carousel-caption {
         top: 50%;
         transform: translateY(-50%);
-        color: #fff;
+        color: whitesmoke;
         text-align: center;
     }
 
-    .carousel-caption,
+    .carousel-caption
     h3 {
         font-size: 1.2rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: center;
     }
 
     .carousel-caption p {
         font-size: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
-        text-align: left;
+        text-align: justify;
     }
 
     p.center {

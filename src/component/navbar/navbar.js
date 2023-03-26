@@ -37,7 +37,8 @@ export const NavBar = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link to="/">Home</Link>
                   <Link to="/Podcast">Podcast</Link>
-                  <Nav.Link href="#action3">Event</Nav.Link>
+                  <Link to="/events
+                ">Event</Link>
                   <Nav.Link href="#action4">Theme park</Nav.Link>
                   <Nav.Link href="#action5">merchandise</Nav.Link>
                   <Nav.Link href="#action6">Movies</Nav.Link>

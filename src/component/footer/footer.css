@@ -1,0 +1,14 @@
+.footer-card{
+    background-color: black !important;
+    color: whitesmoke;
+}
+.footer-card a {
+    color: white !important;
+}
+img,
+svg {
+    vertical-align: middle;
+    font-size: 2rem;
+    margin: .3rem;
+    color:whitesmoke;
+}
