@@ -31,9 +31,9 @@ const EventsPage = () => {
         <CardGroup>
           <Row xs={1} md={2} className="g-4">
             <Col>
-              <Card className="mb-5 card_text">
+              <Card className="mb-5 ">
                 <Card.Img variant="top " src={Startupimg} className="starimg" />
-                <Card.Body>
+                <Card.Body className="card_text">
                   <Card.Title>
                     <h2 className="pageSpan">
                       {" "}
@@ -58,9 +58,13 @@ const EventsPage = () => {
               </Card>
             </Col>
             <Col>
-              <Card className="mb-5 card_text">
-                <Card.Img variant="top " src={Cooperateimg} className="starimg" />
-                <Card.Body>
+              <Card className="mb-5 ">
+                <Card.Img
+                  variant="top "
+                  src={Cooperateimg}
+                  className="starimg"
+                />
+                <Card.Body className="card_text">
                   <Card.Title>
                     <h2 className="pageSpan">
                       {" "}

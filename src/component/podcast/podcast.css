@@ -1,3 +1,14 @@
+.podcast-hero:after{
+    content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+}
+
 .img {
     height: 100vh;
     width: 100vw;
@@ -5,17 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-}
-
-.img:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .hero-text {
@@ -26,4 +26,5 @@
     transform: translate(-50%, -50%);
     color: whitesmoke;
     text-transform: uppercase;
+    z-index: 1;
 }
