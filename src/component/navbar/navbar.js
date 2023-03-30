@@ -1,6 +1,6 @@
 import { Navbar,Container,Offcanvas,Nav,NavDropdown} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../img/kuriousklogo.jpg";
+import logo from "../img/kuriousklogo.png";
 import './navbar.css'
 export const NavBar = () => {
   return (
@@ -37,30 +37,35 @@ export const NavBar = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link to="/">Home</Link>
                   <Link to="/Podcast">Podcast</Link>
-                  <Link to="/events
-                ">Event</Link>
+                  <Link
+                    to="/events
+                "
+                  >
+                    Event
+                  </Link>
                   <Nav.Link href="#action4">Theme park</Nav.Link>
-                  <Nav.Link href="#action5">merchandise</Nav.Link>
+                  <Nav.Link href="#action5">Merchandise</Nav.Link>
                   <Nav.Link href="#action6">Movies</Nav.Link>
                   <Nav.Link href="#action6">Contact Us</Nav.Link>
                   <NavDropdown
                     title="Podcast"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    className="text-light"
                   >
-                    <NavDropdown.Item href="https://open.spotify.com/show/42YnMzOWb923EkxZ8kU0RV?go=1&sp_cid=dfd0bd0e-3ac2-4f64-9668-7e410c5364a7&utm_source=embed_player_p&utm_medium=desktop&nd=1">
+                    <NavDropdown.Item href="https://open.spotify.com/show/42YnMzOWb923EkxZ8kU0RV?go=1&sp_cid=dfd0bd0e-3ac2-4f64-9668-7e410c5364a7&utm_source=embed_player_p&utm_medium=desktop&nd=1" target="_blank">
                       Spotify
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="https://podcasts.apple.com/ng/podcast/kurious-k/id1573065694">
+                    <NavDropdown.Item href="https://podcasts.apple.com/ng/podcast/kurious-k/id1573065694" target="_blank">
                       Apple Podcast
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82MDJiNzJlOC9wb2RjYXN0L3Jzcw==">
+                    <NavDropdown.Item href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82MDJiNzJlOC9wb2RjYXN0L3Jzcw==" target="_blank">
                       Google Podcast
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="https://kuriouskpodcastbykolapo.substack.com/">
-                      Winner of 2023 Tech Bro of the year Award AOT 4.0
+                    <NavDropdown.Item href="https://tr.ee/U4T-CbabYP" target="_blank">
+                      Winner of 2022 Tech Bro of the year Award AOT
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="https://kuriouskpodcastbykolapo.substack.com/">
+                    <NavDropdown.Item href="https://kuriouskpodcastbykolapo.substack.com/" target="_blank">
                       Read Articles on Substack
                     </NavDropdown.Item>
                   </NavDropdown>

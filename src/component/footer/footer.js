@@ -1,4 +1,4 @@
-import logo from "../img/kuriousklogo.jpg";
+import logo from "../img/kuriousklogo.png";
 import "./footer.css";
 import { FaWhatsappSquare, FaInstagramSquare, FaTwitterSquare,FaFacebookSquare,FaLinkedin,} from "react-icons/fa";
 import { IconContext } from "react-icons";

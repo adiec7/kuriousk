@@ -3,7 +3,11 @@ import './events.css';
 import Footer from "../footer/footer";
 import Startupimg from "../img/startup.png";
 import Cooperateimg from "../img/cooperate.png";
-import { Card,CardGroup, Row,Col} from "react-bootstrap";
+import { Card,CardGroup, Row,Col,ListGroup,} from "react-bootstrap";
+import {AiOutlineFieldTime,AiTwotoneTags,AiTwotoneCalendar,} from "react-icons/ai";
+import {MdLocationCity} from "react-icons/md";
+import {BiChevronsRight} from "react-icons/bi"
+import { Link } from "react-router-dom";
 const EventsPage = () => {
   return (
     <>
@@ -44,16 +48,59 @@ const EventsPage = () => {
                     Kurious K Startup Investor Connect event is a unique
                     opportunity for startups and investors to connect,
                     collaborate, and explore potential investment opportunities.
+                    <ListGroup variant="flush">
+                      <ListGroup.Item>
+                        <AiTwotoneCalendar className="events-icons" />{" "}
+                        Friday May 12, 2023{" "}
+                        <AiOutlineFieldTime className="events-icons" /> 5:00pm{" "}
+                      </ListGroup.Item>{" "}
+                      <ListGroup.Item>
+                        {" "}
+                        <AiTwotoneTags className="events-icons" />
+                        networking, investment, partnerships
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <MdLocationCity className="events-icons" />
+                        Lagos
+                      </ListGroup.Item>
+                    </ListGroup>
                   </Card.Text>
-                  <a
-                    className="btn card-btn btn-lg"
-                    href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o"
-                    role="button"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Register
-                  </a>
+                  <div className="row ">
+                    <div className="col-md-4 col-sm-12 mx-auto">
+                      <a
+                        className="btn card-btn btn-lg"
+                        href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o"
+                        role="button"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Register
+                      </a>
+                    </div>
+                    <div className="col-md-4 col-sm-12 mx-auto">
+                      <a
+                        className="btn card-btn btn-lg"
+                        href="mailto:Kolapo@kuriouskmedia.com"
+                        role="button"
+                        rel="noreferrer"
+                      >
+                        Partner
+                      </a>
+                    </div>
+                    <div className="col-md-4 col-sm mx-auto">
+                      <Link
+                        to="#l"
+                        className="btn  btn-lg btn_learn_more"
+                        href="#j"
+                        role="button"
+                        
+                        rel="noreferrer"
+                      >
+                        Learn More
+                        <BiChevronsRight />
+                      </Link>
+                    </div>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
@@ -76,6 +123,21 @@ const EventsPage = () => {
                     corporate can drive support for the startup ecosystem in
                     Africa and discuss the future of innovation on the
                     continent.
+                    <ListGroup variant="flush">
+                      <ListGroup.Item>
+                        <AiTwotoneCalendar className="events-icons" />{" "}
+                        Thursday Nov 2, 2023{" "}
+                        <AiOutlineFieldTime className="events-icons" /> 11:00am{" "}
+                      </ListGroup.Item>{" "}
+                      <ListGroup.Item>
+                        <AiTwotoneTags className="events-icons" />
+                        corporate innovation, partnerships{" "}
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <MdLocationCity className="events-icons" />
+                        Lagos
+                      </ListGroup.Item>
+                    </ListGroup>
                   </Card.Text>
                   <a
                     className="btn card-btn btn-lg"
