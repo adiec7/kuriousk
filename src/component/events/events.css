@@ -5,12 +5,22 @@ body,html{
 } 
 
 div#events_image{
-    background-image: linear-gradient(rgba(14,7,234,.9),rgba(14,7,234, 0.4)), url(../img/event.jpg);
+    background-image: url(../img/event.jpg);
     background-color: black;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+div#events_image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(4, 3, 14, 0.945), rgba(6, 3, 80, 0.616));
 }
 div.events_text{
     text-align: center;
@@ -19,6 +29,10 @@ div.events_text{
     left: 50%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
+    z-index: 1;
+}
+.event_btn:hover{
+    color: white !important;
 }
 
 div.events_text p{
@@ -34,31 +48,36 @@ div.events_text p{
 }
 .card_text{
     background-color: #02B5E3ff;
-    color: whitesmoke;
+    color: black;
     overflow: hidden;
 }
 
 .card-btn{
-    background-color: black;
-    color: whitesmoke;
-}
-.card-btn:hover{
     background-color: wheat;
     color: black;
 }
+.card-btn:hover{
+    background-color: black;
+    color: whitesmoke;
+}
 .pageSpan{
-    color: wheat;
+    color: #02B5E3ff;
     font-weight: 700;
 }
 .events-icons{
     color: wheat;
-    font-size: 2rem;
-    margin-left: .5rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
 }
 .list-group-item{
     background-color: #02B5E3ff;
-    color: white;
+    color: black;
     text-transform: capitalize;
+}
+p.listgruop_item{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    
 }
 .event_learn_more{
     color: whitesmoke;

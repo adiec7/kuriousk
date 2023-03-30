@@ -24,8 +24,8 @@ const EventsPage = () => {
             and opportunities. Let us help you drive innovation and unlock new
             opportunities through our knowledge-driven events.
           </p>
-          <a className="btn btn-primary btn-lg" href="#events" role="button">
-            Check Events
+          <a className="btn btn-primary btn-lg text-dark event_btn" href="#events" role="button">
+            View Events
           </a>
         </div>
       </div>
@@ -39,34 +39,50 @@ const EventsPage = () => {
                 <Card.Img variant="top " src={Startupimg} className="starimg" />
                 <Card.Body className="card_text">
                   <Card.Title>
-                    <h2 className="pageSpan">
+                    <h2 className="text-light">
                       {" "}
                       Kurious K Startup Investor Connect Event
                     </h2>
                   </Card.Title>
                   <Card.Text>
-                    Kurious K Startup Investor Connect event is a unique
-                    opportunity for startups and investors to connect,
-                    collaborate, and explore potential investment opportunities.
+                    <p>
+                      {" "}
+                      Kurious K Startup Investor Connect event is a unique
+                      opportunity for startups and investors to connect,
+                      collaborate, and explore potential investment
+                      opportunities.
+                    </p>
                     <ListGroup variant="flush">
                       <ListGroup.Item>
-                        <AiTwotoneCalendar className="events-icons" />{" "}
-                        Friday May 12, 2023{" "}
-                        <AiOutlineFieldTime className="events-icons" /> 5:00pm{" "}
+                        <p >
+                          <AiTwotoneCalendar className="events-icons" />{" "}
+                          Friday May 12, 2023{" "}
+                        </p>
                       </ListGroup.Item>{" "}
                       <ListGroup.Item>
-                        {" "}
-                        <AiTwotoneTags className="events-icons" />
-                        networking, investment, partnerships
+                        <p className="listgruop_item">
+                          <AiOutlineFieldTime className="events-icons" /> 5:00pm
+                          WAT{" "}
+                        </p>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <MdLocationCity className="events-icons" />
-                        Lagos
+                        {" "}
+                        <p className="listgruop_item">
+                          {" "}
+                          <AiTwotoneTags className="events-icons" />
+                          networking, investment, partnerships
+                        </p>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <p >
+                          <MdLocationCity className="events-icons" />
+                          Lagos
+                        </p>
                       </ListGroup.Item>
                     </ListGroup>
                   </Card.Text>
                   <div className="row ">
-                    <div className="col-md-4 col-sm-12 mx-auto">
+                    <div className="col-md-4 col-sm-12 ">
                       <a
                         className="btn card-btn btn-lg"
                         href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o"
@@ -77,7 +93,7 @@ const EventsPage = () => {
                         Register
                       </a>
                     </div>
-                    <div className="col-md-4 col-sm-12 mx-auto">
+                    <div className="col-md-4 col-sm-12 ">
                       <a
                         className="btn card-btn btn-lg"
                         href="mailto:Kolapo@kuriouskmedia.com"
@@ -87,13 +103,12 @@ const EventsPage = () => {
                         Partner
                       </a>
                     </div>
-                    <div className="col-md-4 col-sm mx-auto">
+                    <div className="col-md-4 col-sm ">
                       <Link
                         to="#l"
                         className="btn  btn-lg btn_learn_more"
                         href="#j"
                         role="button"
-                        
                         rel="noreferrer"
                       >
                         Learn More
@@ -113,29 +128,42 @@ const EventsPage = () => {
                 />
                 <Card.Body className="card_text">
                   <Card.Title>
-                    <h2 className="pageSpan">
+                    <h2 className="text-light">
                       {" "}
                       Kurious K Corporate Innovation Event
                     </h2>
                   </Card.Title>
                   <Card.Text>
-                    Kurious K Corporate Innovation Event aims to explore how
-                    corporate can drive support for the startup ecosystem in
-                    Africa and discuss the future of innovation on the
-                    continent.
+                    <p>
+                      Kurious K Corporate Innovation Event aims to explore how
+                      corporate can drive support for the startup ecosystem in
+                      Africa and discuss the future of innovation on the
+                      continent.
+                    </p>
                     <ListGroup variant="flush">
                       <ListGroup.Item>
-                        <AiTwotoneCalendar className="events-icons" />{" "}
-                        Thursday Nov 2, 2023{" "}
-                        <AiOutlineFieldTime className="events-icons" /> 11:00am{" "}
+                        <p>
+                          <AiTwotoneCalendar className="events-icons " />
+                          Thursday Nov 2, 2023
+                        </p>
                       </ListGroup.Item>{" "}
                       <ListGroup.Item>
-                        <AiTwotoneTags className="events-icons" />
-                        corporate innovation, partnerships{" "}
+                        <p className="listgruop_item">
+                          <AiOutlineFieldTime className="events-icons" />
+                          11:00am WAT{" "}
+                        </p>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <MdLocationCity className="events-icons" />
-                        Lagos
+                        <p className="listgruop_item">
+                          <AiTwotoneTags className="events-icons" />
+                          corporate innovation, partnerships
+                        </p>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        <p >
+                          <MdLocationCity className="events-icons" />
+                          Lagos
+                        </p>
                       </ListGroup.Item>
                     </ListGroup>
                   </Card.Text>
