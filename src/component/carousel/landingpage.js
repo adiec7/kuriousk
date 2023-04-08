@@ -68,7 +68,7 @@ const LandingPage = () => {
               Experience knowledge-driven events that drive innovation with
               Kurious K Events
             </p>
-            <Link to="/events">
+            <Link to="./events">
               <Button variant="success btn btn-lg mt-5">Check Events</Button>
             </Link>
           </Carousel.Caption>

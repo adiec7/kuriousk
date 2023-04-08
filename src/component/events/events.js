@@ -8,6 +8,7 @@ import {AiOutlineFieldTime,AiTwotoneTags,AiTwotoneCalendar,} from "react-icons/a
 import {MdLocationCity} from "react-icons/md";
 import {BiChevronsRight} from "react-icons/bi"
 import { Link } from "react-router-dom";
+// import EventDetails from "../eventdetails/eventdetail";
 const EventsPage = () => {
   return (
     <>
@@ -105,9 +106,8 @@ const EventsPage = () => {
                     </div>
                     <div className="col-md-4 col-sm ">
                       <Link
-                        to="#l"
                         className="btn  btn-lg btn_learn_more"
-                        href="#j"
+                        to="/envestconnect"
                         role="button"
                         rel="noreferrer"
                       >

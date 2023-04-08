@@ -23,7 +23,7 @@ const Footer = () => {
                   <a href="#action">
                     <FaWhatsappSquare />
                   </a>
-                  <a href="#action1">
+                  <a href="https://www.instagram.com/kurious_kpodcast/">
                     <FaInstagramSquare />
                   </a>
                   <a href="#action2">
@@ -32,7 +32,7 @@ const Footer = () => {
                   <a href="#action3">
                     <FaFacebookSquare />
                   </a>
-                  <a href="#action4">
+                  <a href="https://www.linkedin.com/company/kurios-k-media/">
                     <FaLinkedin />
                   </a>
                 </IconContext.Provider>
