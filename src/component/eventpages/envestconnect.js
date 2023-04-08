@@ -17,7 +17,7 @@ const EventConnect = () => {
           <h1>
             <span className="pageSpan">Kurious K Investor Connect</span>   
           </h1>
-          <p className="lead">
+          <p className="">
             <span className="pageSpan">Kurious K</span> Investor Connect is an exclusive event
                 designed to bring together startups and investors in
                 Nigeria for a day of networking, knowledge sharing, and

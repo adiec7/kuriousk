@@ -23,3 +23,26 @@ img.obj-img{
 .obj-p{
     text-align: justify;
 }
+
+@media screen and (max-width: 700px) {
+    div.events_text {
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+    div.events_text p {
+        text-align: left;
+        font-size: 1rem;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        text-align: justify;
+    }
+    h1.events_text{
+        font-size: 1rem;
+    }
+
+}
