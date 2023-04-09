@@ -75,7 +75,7 @@ const EventConnect = () => {
         </div>
       </section>
 
-      <section>
+      <section className="container"> 
       <h2 className="text-center mt-5 pageSpan">Sponsorship Opportunities  </h2>
 
       <div className="card-group mb-5 ">
@@ -109,7 +109,7 @@ const EventConnect = () => {
 </div>
       </section>
 
-      <section>
+      <section className="container">
       <h2 className="text-center mt-5 pageSpan">Expected Outcomes </h2>
 
       <div className="card-group mb-5 ">
@@ -137,8 +137,8 @@ const EventConnect = () => {
   <div className="card card-box last-box">
     {/* <img src="..." class="card-img-top" alt="..."/> */}
     <div className="card-body ">
-      <h5 className="card-title text-center inv-text">For the Ecosystem </h5>
-      <p className="card-text"><AiFillCheckCircle  className="events-icons inv-text"/>Create a dynamic and engaging atmosphere that encourages knowledge-sharing, collaboration, and innovation</p>
+      <h5 className="card-title text-center ">For the Ecosystem </h5>
+      <p className="card-text "><AiFillCheckCircle  className="events-icons inv-text"/>Create a dynamic and engaging atmosphere that encourages knowledge-sharing, collaboration, and innovation</p>
       <p className="card-text">< AiFillCheckCircle className="events-icons"/>Attract more investment into the country</p>
     </div>
   </div>
