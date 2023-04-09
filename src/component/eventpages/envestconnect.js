@@ -4,6 +4,7 @@ import Lagos from "../img/investoconnecimg.jpg"
 import ObjImg from "../img/onjective.jpg"
 import WhyImg from "../img/why.jpg"
 import {BsCheck2Square, BsFillPatchCheckFill} from "react-icons/bs"
+import {AiFillCheckCircle} from "react-icons/ai"
 import "./envestconnect.css"
 
 
@@ -103,6 +104,42 @@ const EventConnect = () => {
       <h5 className="card-title text-center">Silver 1.8 M Naira</h5>
       <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo displayed on all event marketing materials</p>
       <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Booth at the event</p>
+    </div>
+  </div>
+</div>
+      </section>
+
+      <section>
+      <h2 className="text-center mt-5 pageSpan">Expected Outcomes </h2>
+
+      <div className="card-group mb-5 ">
+  <div class="card card-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body">
+      <h5 className="card-title text-center">For Startups</h5>
+      <p className="card-text"><AiFillCheckCircle className="events-icons"/>Showcase their innovations, products, and services to investors and potential partners</p>
+      <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Refine their business models, develop their pitch skills, and identify potential investment opportunities</p>
+      {/* <p className="card-text"><AiFillCheckCircle  className="events-icons"/>3 Sponsored podcast episode</p> */}
+      {/* <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Booth at the event </p> */}
+    </div>
+  </div>
+  <div class="vr"></div>
+  <div className="card card-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body">
+      <h5 className="card-title text-center">For Investors</h5>
+      <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Meet and interact with a curated selection of high-potential startups across various sectors</p>
+      <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Identify potential investment opportunities</p>
+      {/* <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Booth at the event</p> */}
+    </div>
+  </div>
+  <div class="vr"></div>
+  <div className="card card-box last-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body ">
+      <h5 className="card-title text-center inv-text">For the Ecosystem </h5>
+      <p className="card-text"><AiFillCheckCircle  className="events-icons inv-text"/>Create a dynamic and engaging atmosphere that encourages knowledge-sharing, collaboration, and innovation</p>
+      <p className="card-text">< AiFillCheckCircle className="events-icons"/>Attract more investment into the country</p>
     </div>
   </div>
 </div>
