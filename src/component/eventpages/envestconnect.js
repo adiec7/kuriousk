@@ -3,7 +3,7 @@ import NavBar from "../navbar/navbar"
 import Lagos from "../img/investoconnecimg.jpg"
 import ObjImg from "../img/onjective.jpg"
 import WhyImg from "../img/why.jpg"
-import {BsCheck2Square} from "react-icons/bs"
+import {BsCheck2Square, BsFillPatchCheckFill} from "react-icons/bs"
 import "./envestconnect.css"
 
 
@@ -72,6 +72,40 @@ const EventConnect = () => {
           </div>
 
         </div>
+      </section>
+
+      <section>
+      <h2 className="text-center mt-5 pageSpan">Sponsorship Opportunities  </h2>
+
+      <div className="card-group mb-5 ">
+  <div class="card card-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body">
+      <h5 className="card-title text-center">Platnium 5 M Naira</h5>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo prominently displayed on all event marketing materials</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Speaking slot on the main stage</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>3 Sponsored podcast episode</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Booth at the event </p>
+    </div>
+  </div>
+  <div className="card card-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body">
+      <h5 className="card-title text-center">Gold 3 M Naira</h5>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo displayed on all event marketing materials</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Speaking slot on a panel</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Booth at the event</p>
+    </div>
+  </div>
+  <div className="card card-box last-box">
+    {/* <img src="..." class="card-img-top" alt="..."/> */}
+    <div className="card-body ">
+      <h5 className="card-title text-center">Silver 1.8 M Naira</h5>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo displayed on all event marketing materials</p>
+      <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Booth at the event</p>
+    </div>
+  </div>
+</div>
       </section>
 
       <Footer/>

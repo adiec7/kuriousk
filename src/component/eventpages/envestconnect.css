@@ -23,6 +23,13 @@ img.obj-img{
 .obj-p{
     text-align: justify;
 }
+.card-box{
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    background-color: black;
+    color: whitesmoke;
+}
+
 
 @media screen and (max-width: 700px) {
     div.events_text {
