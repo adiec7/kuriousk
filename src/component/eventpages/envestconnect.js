@@ -2,6 +2,7 @@ import Footer from "../footer/footer"
 import NavBar from "../navbar/navbar"
 import Lagos from "../img/investoconnecimg.jpg"
 import ObjImg from "../img/onjective.jpg"
+import WhyImg from "../img/why.jpg"
 import {BsCheck2Square} from "react-icons/bs"
 import "./envestconnect.css"
 
@@ -47,6 +48,27 @@ const EventConnect = () => {
            <p><BsCheck2Square className="events-icons"/>To facilitate networking and relationship-building between startups and investors, with a focus on identifying potential investment opportunities.</p>
            <p><BsCheck2Square className="events-icons"/>To provide startups with valuable insights and feedback from experienced investors, mentors, and industry experts.</p>
            <p><BsCheck2Square className="events-icons"/>To create a dynamic and engaging atmosphere to drive investment readiness for startups pre event .</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="events_text container">
+        <h2 className="text-center mt-5 pageSpan">Why Sponsor us? </h2>
+        <p className="obj-text">Kurious K Startup Investor Connect event is a unique
+        opportunity for startups and investors to connect,
+        collaborate, and explore potential investment
+        opportunities. We are Creating a platform for future investment and
+        growth and a stronger startup ecosystem in Nigeria
+        </p>
+        <div className="row obj-p">
+          <div className="col-sm-12 col-md-6  ">
+           <p><BsCheck2Square className="events-icons"/> Connect with the core audience including startup founders, entrepreneurs, and enterprise businesses.</p>
+           <p><BsCheck2Square className="events-icons"/>Demonstrate dedication to the African startup ecosystem by showing commitment to the growth and success of the African startup ecosystem, which is a key part of your mission and values.</p>
+           <p><BsCheck2Square className="events-icons"/>Showcase payment solutions: By sponsoring the event, Flutterwave can showcase its payment solutions to a targeted audience and potentially attract new customers and clients.</p>
+          </div>
+          <div className="col-sm-12 col-md-6 ml-5">
+          <img src={WhyImg} alt="Onjective img" className="obj-img mb-5" width="400px"/>
           </div>
 
         </div>
