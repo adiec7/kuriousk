@@ -59,14 +59,16 @@ const EventConnect = () => {
         <p className="obj-text">Kurious K Startup Investor Connect event is a unique
         opportunity for startups and investors to connect,
         collaborate, and explore potential investment
-        opportunities. We are Creating a platform for future investment and
-        growth and a stronger startup ecosystem in Nigeria
+        opportunities. 
         </p>
         <div className="row obj-p">
           <div className="col-sm-12 col-md-6  ">
+
+           <p><BsCheck2Square className="events-icons"/>We are Creating a platform for future investment and
+        growth and a stronger startup ecosystem in Nigeria</p>
            <p><BsCheck2Square className="events-icons"/> Connect with the core audience including startup founders, entrepreneurs, and enterprise businesses.</p>
            <p><BsCheck2Square className="events-icons"/>Demonstrate dedication to the African startup ecosystem by showing commitment to the growth and success of the African startup ecosystem, which is a key part of your mission and values.</p>
-           <p><BsCheck2Square className="events-icons"/>Showcase payment solutions: By sponsoring the event, Flutterwave can showcase its payment solutions to a targeted audience and potentially attract new customers and clients.</p>
+           <p><BsCheck2Square className="events-icons"/>Showcase solutions: By sponsoring the event, organizations can showcase its solutions to a targeted audience and potentially attract new customers and clients.</p>
           </div>
           <div className="col-sm-12 col-md-6 ml-5">
           <img src={WhyImg} alt="Onjective img" className="obj-img mb-5" width="400px"/>
@@ -75,12 +77,12 @@ const EventConnect = () => {
         </div>
       </section>
 
-      <section className="container"> 
+      {/* <section className="container"> 
       <h2 className="text-center mt-5 pageSpan">Sponsorship Opportunities  </h2>
 
       <div className="card-group mb-5 ">
   <div class="card card-box">
-    {/* <img src="..." class="card-img-top" alt="..."/> */}
+
     <div className="card-body">
       <h5 className="card-title text-center">Platnium 5 M Naira</h5>
       <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo prominently displayed on all event marketing materials</p>
@@ -90,7 +92,7 @@ const EventConnect = () => {
     </div>
   </div>
   <div className="card card-box">
-    {/* <img src="..." class="card-img-top" alt="..."/> */}
+  
     <div className="card-body">
       <h5 className="card-title text-center">Gold 3 M Naira</h5>
       <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo displayed on all event marketing materials</p>
@@ -99,7 +101,7 @@ const EventConnect = () => {
     </div>
   </div>
   <div className="card card-box last-box">
-    {/* <img src="..." class="card-img-top" alt="..."/> */}
+
     <div className="card-body ">
       <h5 className="card-title text-center">Silver 1.8 M Naira</h5>
       <p className="card-text"><BsFillPatchCheckFill className="events-icons"/>Logo displayed on all event marketing materials</p>
@@ -107,7 +109,7 @@ const EventConnect = () => {
     </div>
   </div>
 </div>
-      </section>
+      </section> */}
 
       <section className="container">
       <h2 className="text-center mt-5 pageSpan">Expected Outcomes </h2>

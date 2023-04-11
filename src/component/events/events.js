@@ -107,7 +107,7 @@ const EventsPage = () => {
                     <div className="col-md-4 col-sm ">
                       <Link
                         className="btn  btn-lg btn_learn_more"
-                        to="/envestconnect"
+                        to="/investorconnect"
                         role="button"
                         rel="noreferrer"
                       >
