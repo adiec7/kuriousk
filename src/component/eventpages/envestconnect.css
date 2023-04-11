@@ -20,7 +20,7 @@ div.events_text{
 img.obj-img{
    width: 100%;
    height: auto;
-   border-radius: 2rem;
+   border-radius: 1rem;
 }
 .obj-p{
     text-align: justify;
@@ -38,6 +38,7 @@ img.obj-img{
 
 
 @media screen and (max-width: 700px) {
+    
     div.events_text {
     text-align: justify;
     position: absolute;
