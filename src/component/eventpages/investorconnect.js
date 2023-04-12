@@ -3,7 +3,7 @@ import NavBar from "../navbar/navbar"
 import Lagos from "../img/investoconnecimg.jpg"
 import ObjImg from "../img/onjective.jpg"
 import WhyImg from "../img/why.jpg"
-import {BsCheck2Square, BsFillPatchCheckFill} from "react-icons/bs"
+import {BsCheck2Square,} from "react-icons/bs"
 import {AiFillCheckCircle} from "react-icons/ai"
 import "./envestconnect.css"
 
@@ -52,6 +52,22 @@ const EventConnect = () => {
           </div>
 
         </div>
+      </section>
+
+      <section className="contact-event my-5">
+        <div className="contact-event-text text-center container">
+          <h3 className="pt-5">Partner with us</h3>
+          <p className="text-light">Kurious K Startup Investor Connect event is a unique
+          opportunity for startups and investors to connect,
+          collaborate, and explore potential investment
+          opportunities.
+          We are Creating a platform for future investment and
+          growth and a stronger startup ecosystem in Nigeria
+          </p>
+          <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:Kolapo@kuriouskmedia.com" role="button">
+            Contact Us
+          </a>
+          </div>
       </section>
 
       <section className="events_text container">
@@ -125,7 +141,7 @@ const EventConnect = () => {
       {/* <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Booth at the event </p> */}
     </div>
   </div>
-  <div class="vr"></div>
+  <div className="vr"></div>
   <div className="card card-box">
     {/* <img src="..." class="card-img-top" alt="..."/> */}
     <div className="card-body">
@@ -135,7 +151,7 @@ const EventConnect = () => {
       {/* <p className="card-text"><AiFillCheckCircle  className="events-icons"/>Booth at the event</p> */}
     </div>
   </div>
-  <div class="vr"></div>
+  <div className="vr"></div>
   <div className="card card-box last-box">
     {/* <img src="..." class="card-img-top" alt="..."/> */}
     <div className="card-body ">

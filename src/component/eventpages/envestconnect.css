@@ -34,6 +34,14 @@ img.obj-img{
 .vr{
     color: #02B5E3ff;
 }
+ .contact-event{
+    background-image: linear-gradient(rgba(14, 7, 234, .9), rgba(14, 7, 234, 0.4)),url(../img/contect.jpg);
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+ }
+ 
 
 
 
@@ -46,6 +54,17 @@ img.obj-img{
     left: 40%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
+}
+.podcast-hero:after{
+    content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100% !important;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
 }
 
     div.events_text p {
