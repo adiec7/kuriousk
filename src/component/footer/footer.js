@@ -12,8 +12,8 @@ const Footer = () => {
               <img src={logo} alt="logo" className="footer-img" />
               <p className="text-center text-light">
                 <a href="tel:+2347069359788">+2347069359788</a> <br />
-                <a href="mailto:Kolapo@kuriouskmedia.com">
-                  Kolapo@kuriouskmedia.com
+                <a href="mailto:hello@kuriouskmedia.com">
+                  hello@kuriouskmedia.com
                 </a>
               </p>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                   </a>
                 </IconContext.Provider>
               </div>
-              <p className="card-text">Eti Osa, lagos, Nigeria</p>
+              <p className="card-text">Lagos, Nigeria</p>
             </div>
           </div>
         </footer>

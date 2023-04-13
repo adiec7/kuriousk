@@ -27,7 +27,7 @@ const EventConnect = () => {
                 high-potential startups across various sectors, as well as
                 leading investors from Nigeria and beyond.
           </p>
-          <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:Kolapo@kuriouskmedia.com" role="button">
+          <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:hello@kuriouskmedia.com" role="button">
             Partner
           </a>
         </div>
@@ -38,7 +38,7 @@ const EventConnect = () => {
         opportunity for startups and investors to connect,
         collaborate, and explore potential investment
         opportunities. We are Creating a platform for future investment and
-        growth and a stronger startup ecosystem in Nigeria
+        growth and a stronger startup ecosystem in Nigeria.
         </p>
         <div className="row obj-p">
           <div className="col-sm-12 col-md-6 ">
@@ -64,7 +64,7 @@ const EventConnect = () => {
           We are Creating a platform for future investment and
           growth and a stronger startup ecosystem in Nigeria
           </p>
-          <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:Kolapo@kuriouskmedia.com" role="button">
+          <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:hello@kuriouskmedia.com" role="button">
             Contact Us
           </a>
           </div>
@@ -78,7 +78,7 @@ const EventConnect = () => {
         opportunities. 
         </p>
         <div className="row obj-p">
-          <div className="col-sm-12 col-md-6  ">
+          <div className="col-sm-12 col-md-6 mt-5 ">
 
            <p><BsCheck2Square className="events-icons"/>We are Creating a platform for future investment and
         growth and a stronger startup ecosystem in Nigeria</p>
