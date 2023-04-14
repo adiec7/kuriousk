@@ -50,7 +50,7 @@ img.obj-img{
     div.events_text {
     text-align: justify;
     position: absolute;
-    top: 50%;
+    top: 60%  !important;
     left: 40%;
     transform: translate(-50%, -50%);
     color: whitesmoke;
@@ -62,7 +62,7 @@ img.obj-img{
         top: 0;
         bottom: 0;
         left: 0;
-        height: 100% !important;
+        height: 100vh !important;
         right: 0;
         background: rgba(0, 0, 0, 0.7);
 }
@@ -76,6 +76,10 @@ img.obj-img{
     }
     h1.events_text{
         font-size: 1rem;
+        text-align: left !important;
+    }
+    .event_btn{
+        border: 1rem !important;
     }
 
 }
