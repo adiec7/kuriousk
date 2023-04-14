@@ -27,10 +27,10 @@ const EventConnect = () => {
                 high-potential startups across various sectors, as well as
                 leading investors from Nigeria and beyond.
           </p>
-          <button type="button" class="btn btn-link"> <a className="btn btn-primary btn-lg text-dark event_btn" href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o" role="button" target="_blank" rel="noreferrer" >
+          <button type="button" class="btn "> <a className="btn btn-primary btn-lg text-dark event_btn" href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o" role="button" target="_blank" rel="noreferrer" >
             Attend
           </a></button>
-          <button type="button" class="btn btn-link"> <a className="btn btn-primary btn-lg text-dark event_btn " href="mailto:hello@kuriouskmedia.com" role="button">
+          <button type="button" class="btn "> <a className="btn btn-primary btn-lg text-dark event_btn " href="mailto:hello@kuriouskmedia.com" role="button">
             Partner
           </a></button>
          
