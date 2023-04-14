@@ -50,7 +50,7 @@ img.obj-img{
     div.events_text {
     text-align: justify;
     position: absolute;
-    top: 60%  !important;
+    top: 50%  !important;
     left: 40%;
     /* transform: translate(-50%, -50%); */
     color: whitesmoke;
@@ -78,9 +78,10 @@ img.obj-img{
         font-size: 1.5rem;
         text-align: left !important;
     }
-    .event_btn{
+    .event_btn a{
         border: 1rem !important;
         display: inline;
+        text-decoration: none;
     }
 
 }
