@@ -52,7 +52,7 @@ img.obj-img{
     position: absolute;
     top: 60%  !important;
     left: 40%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     color: whitesmoke;
 }
 .podcast-hero:after{
@@ -80,6 +80,7 @@ img.obj-img{
     }
     .event_btn{
         border: 1rem !important;
+        display: inline;
     }
 
 }
