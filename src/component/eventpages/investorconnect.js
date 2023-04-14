@@ -16,7 +16,7 @@ const EventConnect = () => {
        <section className="podcast-hero">
        <img src={Lagos} alt="landing img" className="img" />
         <div className="events_text lead">
-          <h1>
+          <h1 className="heading-text">
             <span className="pageSpan">Kurious K Investor Connect</span>   
           </h1>
           <p className="">
