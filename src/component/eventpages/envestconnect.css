@@ -90,7 +90,7 @@ img.obj-img{
     .contact-event{
         background-image: linear-gradient(rgba(14, 7, 234, .9), rgba(14, 7, 234, 0.4)),url(../img/contect.jpg);
         width: 100%;
-        height: 500px;
+        height: 550px;
         object-fit: cover;
         overflow: hidden;
      }
