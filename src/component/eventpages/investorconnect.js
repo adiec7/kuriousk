@@ -27,10 +27,10 @@ const EventConnect = () => {
                 high-potential startups across various sectors, as well as
                 leading investors from Nigeria and beyond.
           </p>
-          <button type="button" class="btn "> <a className="btn btn-primary btn-lg text-dark event_btn" href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o" role="button" target="_blank" rel="noreferrer" >
+          <button type="button" className="btn "> <a className="btn btn-primary btn-lg text-dark event_btn" href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o" role="button" target="_blank" rel="noreferrer" >
             Attend
           </a></button>
-          <button type="button" class="btn "> <a className="btn btn-primary btn-lg text-dark event_btn " href="mailto:hello@kuriouskmedia.com" role="button">
+          <button type="button" className="btn "> <a className="btn btn-primary btn-lg text-dark event_btn " href="mailto:hello@kuriouskmedia.com" role="button">
             Partner
           </a></button>
          
@@ -63,13 +63,12 @@ const EventConnect = () => {
 
       <section className="contact-event my-5">
         <div className="contact-event-text text-center container">
-          <h3 className="pt-5">Partner with us</h3>
-          <p className="text-light">Kurious K Startup Investor Connect event is a unique
-          opportunity for startups and investors to connect,
-          collaborate, and explore potential investment
-          opportunities.
-          We are Creating a platform for future investment and
-          growth and a stronger startup ecosystem in Nigeria
+          <h3 className="pt-5">Why Kurious K  Investor Connect</h3>
+          <p className="text-light">Nigeria reigns supreme in African funding for two years running, Interestingly only roughly 200 startups were able to secure investment out of the thousands of startups that exist in the country in 2022.
+
+          According to a report from Big Deal and Briter Bridges, Nigerian startups raised over 1.2 Billion USD of which 445 billion was raised globally. Putting in Perspective Nigeria's startup raised 0.269% of global funds raised by startups.
+
+          We can do more! Kurious K startup Investor Connect event is creating a platform where other high-performing startups can easily connect with potential investors during an exclusive event.
           </p>
           <a className="btn btn-primary btn-lg text-dark event_btn" href="mailto:hello@kuriouskmedia.com" role="button">
             Contact Us
@@ -104,7 +103,7 @@ const EventConnect = () => {
       <h2 className="text-center mt-5 pageSpan">Sponsorship Opportunities  </h2>
 
       <div className="card-group mb-5 ">
-  <div class="card card-box">
+  <div className="card card-box">
 
     <div className="card-body">
       <h5 className="card-title text-center">Platnium 5 M Naira</h5>
@@ -138,8 +137,8 @@ const EventConnect = () => {
       <h2 className="text-center mt-5 pageSpan">Expected Outcomes </h2>
 
       <div className="card-group mb-5 ">
-  <div class="card card-box">
-    {/* <img src="..." class="card-img-top" alt="..."/> */}
+  <div className="card card-box">
+    {/* <img src="..." className="card-img-top" alt="..."/> */}
     <div className="card-body">
       <h5 className="card-title text-center">For Startups</h5>
       <p className="card-text"><AiFillCheckCircle className="events-icons"/>Showcase their innovations, products, and services to investors and potential partners</p>
