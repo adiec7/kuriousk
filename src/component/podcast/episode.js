@@ -15,7 +15,9 @@ function EpisodePodcast() {
           return {
             title: item.querySelector('title').textContent,
             description: item.querySelector('description').textContent,
-            audio: item.querySelector('enclosure').getAttribute('url')
+            audio: item.querySelector('enclosure').getAttribute('url'),
+            spotify: item.querySelector('guid').textContent,
+            itunes: item.querySelector('link').textContent
           }
         });
         setEpisodes(episodeData);
@@ -31,10 +33,11 @@ function EpisodePodcast() {
               <Card.Body>
                 <Card.Title>{episode.title}</Card.Title>
                 <Card.Text className="text-truncate" style={{maxHeight: '3em', overflow: 'hidden'}}>{episode.description}</Card.Text>
-                <audio controls src={episode.audio} />
+                <audio controls src={episode.audio} preload="none" />
               </Card.Body>
               <Card.Footer>
-                <Button className='btn-lg'>Listen Now</Button>
+                <Button className='btn-lg' href={episode.itunes} target="_blank" rel="noopener noreferrer">Listen on Spotify</Button>
+                <Button variant="secondary" href={episode.spotify} target="_blank" rel="noopener noreferrer">Listen on iTunes</Button>
               </Card.Footer>
             </Card>
           </div>
