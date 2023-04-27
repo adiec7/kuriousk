@@ -38,6 +38,9 @@ const Footer = () => {
                 </IconContext.Provider>
               </div>
               <p className="card-text">Lagos, Nigeria</p>
+              <a href="https://karisoft.io/">
+                    Made by karisoft Solution 
+                  </a>
             </div>
           </div>
         </footer>

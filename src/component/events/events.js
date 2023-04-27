@@ -82,9 +82,7 @@ const EventsPage = () => {
                       </ListGroup.Item>
                     </ListGroup>
                   </Card.Text>
-                  <div className="row ">
-                    <div className="col-md-4 col-sm-12 ">
-                      <a
+                  <button type="button" className="btn "> <a
                         className="btn card-btn btn-lg"
                         href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o"
                         role="button"
@@ -92,20 +90,18 @@ const EventsPage = () => {
                         rel="noreferrer"
                       >
                         Register
-                      </a>
-                    </div>
-                    <div className="col-md-4 col-sm-12 ">
-                      <a
+                      </a></button>
+                      
+                      <button type="button" className="btn "><a
                         className="btn card-btn btn-lg"
                         href="mailto:Kolapo@kuriouskmedia.com"
                         role="button"
                         rel="noreferrer"
                       >
                         Partner
-                      </a>
-                    </div>
-                    <div className="col-md-4 col-sm ">
-                      <Link
+                      </a></button>
+
+                      <button type="button " className="btn "> <Link
                         className="btn  btn-lg btn_learn_more"
                         to="/investorconnect"
                         role="button"
@@ -113,9 +109,7 @@ const EventsPage = () => {
                       >
                         Learn More
                         <BiChevronsRight />
-                      </Link>
-                    </div>
-                  </div>
+                      </Link></button>
                 </Card.Body>
               </Card>
             </Col>
