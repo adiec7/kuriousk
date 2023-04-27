@@ -4,6 +4,7 @@ import Podcastimg from "../img/podcast.jpg";
 import './podcast.css'
 import { Dropdown } from "react-bootstrap";
 import Footer from "../footer/footer";
+import EpisodePodcast from "./episode";
 export const Podcast = () => {
   return (
     <>
@@ -43,6 +44,7 @@ export const Podcast = () => {
           </Dropdown>
         </div>
       </div>
+      <EpisodePodcast/>
       <Footer/>
     </>
   );
