@@ -3,18 +3,40 @@ import './events.css';
 import Footer from "../footer/footer";
 import Startupimg from "../img/startup.png";
 import Cooperateimg from "../img/cooperate.png";
-import { Card,CardGroup, Row,Col,ListGroup,} from "react-bootstrap";
+import { Card,CardGroup, Row,Col,ListGroup,Button} from "react-bootstrap";
 import {AiOutlineFieldTime,AiTwotoneTags,AiTwotoneCalendar,} from "react-icons/ai";
 import {MdLocationCity} from "react-icons/md";
 import {BiChevronsRight} from "react-icons/bi"
-import { useEffect } from 'react';
-import { Link } from "react-router-dom";
-// import EventDetails from "../eventdetails/eventdetail";
+import React, { useState } from "react";
 const EventsPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  
+  const [events, ] = useState([
+    {
+      title: "Kurious K Startup Investor Connect Event",
+      date: "May 12, 2023",
+      time: "5:00pm WAT",
+      location: "Lagos",
+      description:
+        "Kurious K Startup Investor Connect event is a unique opportunity for startups and investors to connect, collaborate, and explore potential investment opportunities.",
+      image: Startupimg ,
+      networking: "Networking, Investment, Partnerships",
+      button1:  <Button className="card-btn " href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o" target="_blank">Register</Button>,
+      button2: <Button className="card-btn " href="mailto:Kolapo@kuriouskmedia.com" target="_blank">Partner</Button>,
+      button3: <Button className="card-btn " href="/investorconnect">Learn More  <BiChevronsRight/></Button>,
+    },
+    {
+      title: "Kurious K Corporate Innovation Event",
+      date: "Thursday Nov 2, 2023",
+      time: "11:00am",
+      location: "Lagos",
+      description: "Kurious K Corporate Innovation Event aims to explore how corporate can drive support for the startup ecosystem in Africa and discuss the future of innovation on the continent.",
+      image: Cooperateimg,
+      networking: "Corporate Innovation, Partnerships",
+      button1: <Button className="card-btn ">Coming Soon</Button>,
+    },
+
+
+  ]);
+
   return (
     <>
       <NavBar />
@@ -30,7 +52,11 @@ const EventsPage = () => {
             and opportunities. Let us help you drive innovation and unlock new
             opportunities through our knowledge-driven events.
           </p>
-          <a className="btn btn-primary btn-lg text-dark event_btn" href="#events" role="button">
+          <a
+            className="btn btn-primary btn-lg text-dark event_btn"
+            href="#events"
+            role="button"
+          >
             View Events
           </a>
         </div>
@@ -40,164 +66,55 @@ const EventsPage = () => {
 
         <CardGroup>
           <Row xs={1} md={2} className="g-4">
-            <Col>
-              <Card className="mb-5 ">
-                <Card.Img variant="top " src={Startupimg} className="starimg" />
-                <Card.Body className="card_text">
-                  <Card.Title>
-                    <h2 className="text-light">
-                      {" "}
-                      Kurious K Startup Investor Connect Event
-                    </h2>
-                  </Card.Title>
-                  <Card.Text>
-                    <p>
-                      {" "}
-                      Kurious K Startup Investor Connect event is a unique
-                      opportunity for startups and investors to connect,
-                      collaborate, and explore potential investment
-                      opportunities.
-                    </p>
-                    <ListGroup variant="flush">
-                      <ListGroup.Item>
-                        <p >
-                          <AiTwotoneCalendar className="events-icons" />{" "}
-                          Friday May 12, 2023{" "}
-                        </p>
-                      </ListGroup.Item>{" "}
-                      <ListGroup.Item>
-                        <p className="listgruop_item">
-                          <AiOutlineFieldTime className="events-icons" /> 5:00pm
-                          WAT{" "}
-                        </p>
-                      </ListGroup.Item>
-                      <ListGroup.Item>
-                        {" "}
-                        <p className="listgruop_item">
-                          {" "}
-                          <AiTwotoneTags className="events-icons" />
-                          networking, investment, partnerships
-                        </p>
-                      </ListGroup.Item>
-                      <ListGroup.Item>
-                        <p >
-                          <MdLocationCity className="events-icons" />
-                          Lagos
-                        </p>
-                      </ListGroup.Item>
-                    </ListGroup>
-                  </Card.Text>
-                  <button type="button" className="btn "> <a
-                        className="btn card-btn btn-lg"
-                        href="https://forms.zohopublic.com/kuriouskmedia/form/KuriousKStartupInvestorConnectExclusive/formperma/9QpSkis6pnIMZFvd-70esEX1dewds-UQswm6pCfMT7o"
-                        role="button"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Register
-                      </a></button>
-                      
-                      <button type="button" className="btn "><a
-                        className="btn card-btn btn-lg"
-                        href="mailto:Kolapo@kuriouskmedia.com"
-                        role="button"
-                        rel="noreferrer"
-                      >
-                        Partner
-                      </a></button>
-
-                      <button type="button " className="btn "> <Link
-                        className="btn  btn-lg btn_learn_more"
-                        to="/investorconnect"
-                        role="button"
-                        rel="noreferrer"
-                      >
-                        Learn More
-                        <BiChevronsRight />
-                      </Link></button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card className="mb-5 ">
-                <Card.Img
-                  variant="top "
-                  src={Cooperateimg}
-                  className="starimg"
-                />
-                <Card.Body className="card_text">
-                  <Card.Title>
-                    <h2 className="text-light">
-                      {" "}
-                      Kurious K Corporate Innovation Event
-                    </h2>
-                  </Card.Title>
-                  <Card.Text>
-                    <p>
-                      Kurious K Corporate Innovation Event aims to explore how
-                      corporate can drive support for the startup ecosystem in
-                      Africa and discuss the future of innovation on the
-                      continent.
-                    </p>
+            {events.map((event) => (
+              <Col key={event.title}>
+                <Card className="mb-5 ">
+                  {event.image && (
+                    <Card.Img variant="top" src={event.image} className="starimg" />
+                  )}
+                  <Card.Body className="card_text">
+                    <Card.Title>
+                      <h2 className="text-light"> {event.title}</h2>
+                    </Card.Title>
+                    <Card.Text>{event.description}</Card.Text>
                     <ListGroup variant="flush">
                       <ListGroup.Item>
                         <p>
-                          <AiTwotoneCalendar className="events-icons " />
-                          Thursday Nov 2, 2023
-                        </p>
-                      </ListGroup.Item>{" "}
-                      <ListGroup.Item>
-                        <p className="listgruop_item">
-                          <AiOutlineFieldTime className="events-icons" />
-                          11:00am WAT{" "}
+                          {" "}
+                          <AiTwotoneCalendar className="events-icons" />{" "}
+                          {event.date} 
                         </p>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <p className="listgruop_item">
-                          <AiTwotoneTags className="events-icons" />
-                          corporate innovation, partnerships
-                        </p>
+                      <p><AiOutlineFieldTime className="events-icons" />{" "}
+                          {event.time}</p>
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        <p >
-                          <MdLocationCity className="events-icons" />
-                          Lagos
-                        </p>
+                        
+                        <p>{" "}<AiTwotoneTags className="events-icons"/>{" "} {event.networking}</p>
+                        </ListGroup.Item>
+                      <ListGroup.Item>
+                        <p>{" "}
+                        <MdLocationCity className="events-icons" />{" "}
+                        {event.location}</p>
+                      </ListGroup.Item>
+                      <ListGroup.Item>
+                        {event.button1}{" "}
+                        {event.button2}{" "}
+                        {event.button3}
                       </ListGroup.Item>
                     </ListGroup>
-                  </Card.Text>
-                  <a
-                    className="btn card-btn btn-lg"
-                    href="#n"
-                    role="button"
-                    rel="noreferrer"
-                  >
-                    Coming Soon
-                  </a>
-                </Card.Body>
-              </Card>
-            </Col>
-            {/* <Col>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-              </Card>
-            </Col> */}
+                   
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </CardGroup>
       </section>
-      <Footer />
+      <Footer/>
     </>
   );
 };
+  
 export default EventsPage;
