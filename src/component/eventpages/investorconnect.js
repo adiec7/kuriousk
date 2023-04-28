@@ -5,11 +5,17 @@ import ObjImg from "../img/onjective.jpg"
 import WhyImg from "../img/why.jpg"
 import {BsCheck2Square,} from "react-icons/bs"
 import {AiFillCheckCircle} from "react-icons/ai"
+import { useEffect } from 'react';
 import "./envestconnect.css"
 
 
 
+
 const EventConnect = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
     return (
         <>
        <NavBar />
