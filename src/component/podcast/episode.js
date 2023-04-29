@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Button, Form } from 'react-bootstrap';
+import { Card, Button, Form, Modal} from 'react-bootstrap';
+import {TbBrandSpotify} from 'react-icons/tb';
+import {SiApplepodcasts,SiGooglepodcasts} from 'react-icons/si';
+import {BiChevronsRight} from "react-icons/bi";
+// import AppleLogo from "../img/apple-podcasts-2447894.png"
+
 
 function EpisodePodcast() {
   const [episodes, setEpisodes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [episodesPerPage] = useState(6);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentEpisode, setCurrentEpisode] = useState(null);
 
   useEffect(() => {
     fetch('https://anchor.fm/s/602b72e8/podcast/rss')
@@ -20,10 +26,11 @@ function EpisodePodcast() {
             title: item.querySelector('title').textContent,
             description: item.querySelector('description').textContent,
             audio: item.querySelector('enclosure').getAttribute('url'),
-            spotify: item.querySelector('link').textContent,
-            itunes: item.querySelector('guid').textContent,
-            google: item.querySelector('google\\:play') ? item.querySelector('google\\:play').getAttribute('url') : null,
-            image: image
+            spotify: 'https://open.spotify.com/show/42YnMzOWb923EkxZ8kU0RV',
+            itunes: "https://podcasts.apple.com/ng/podcast/kurious-k/id1573065694",
+            google: "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82MDJiNzJlOC9wb2RjYXN0L3Jzcw==",
+            image: image,
+            fullInfo: item.querySelector('link').textContent
           }
         });
         setEpisodes(episodeData);
@@ -40,6 +47,8 @@ function EpisodePodcast() {
     episode.title.toLowerCase().includes(searchTerm.toLowerCase())
   ).slice(indexOfFirstEpisode, indexOfLastEpisode);
 
+  
+
   const renderEpisodes = () => {
     return currentEpisodes.map((episode, index) => (
       <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index} >
@@ -48,13 +57,28 @@ function EpisodePodcast() {
           <Card.Body>
             <Card.Title>{episode.title}</Card.Title>
             <Card.Text className="text-truncate" style={{maxHeight: '3em', overflow: 'hidden'}}>{episode.description}</Card.Text>
+            <Button variant="outline-info" className='mb-2' onClick={() => handleLearnMore(episode)}>Read More <BiChevronsRight/></Button>
             <audio controls src={episode.audio} preload="none" />
+            
           </Card.Body>
           <Card.Footer>
-            <Button variant="info" onClick={() => openLink(episode.spotify)}>Listen on Spotify</Button>{' '}
-            <Button variant="secondary" onClick={() => openLink(episode.itunes)}>Listen on iTunes</Button>
-            {episode.google && <Button variant="success" onClick={() => openLink(episode.google)}>Listen on Google Podcasts</Button>}
+            <Button target='_blank' style={{ backgroundColor: '#25D77C' }} onClick={() => openLink(episode.spotify)}>< TbBrandSpotify/></Button>{' '}
+            <Button target='_blank' style={{ backgroundColor: '#C36CD8' }} onClick={() => openLink(episode.itunes)}><SiApplepodcasts/></Button>{" "}
+            {episode.google && <Button target='_blank' variant="success" onClick={() => openLink(episode.google)}><SiGooglepodcasts/></Button>}
           </Card.Footer>
+          <Modal show={currentEpisode !== null} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {currentEpisode && currentEpisode.description}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="info" onClick={handleClose}>
+           Close
+          </Button>
+        </Modal.Footer>
+       </Modal>
         </Card>
       </div>
     ));
@@ -73,6 +97,14 @@ function EpisodePodcast() {
     setCurrentPage(currentPage + 1);
   }
 
+  const handleLearnMore = (episode) => {
+       setCurrentEpisode(episode);
+   }
+    
+     const handleClose = () => {
+        setCurrentEpisode(null);
+      }
+      
   return (
     <div className="container " id='episodes'>
       <div className="row justify-content-center mt-4 mb-3">
@@ -92,7 +124,3 @@ function EpisodePodcast() {
 }
 
 export default EpisodePodcast;
-
-
-
-

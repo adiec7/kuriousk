@@ -47,6 +47,7 @@ export const NavBar = () => {
                   <Nav.Link href="#action5">Merchandise</Nav.Link>
                   <Nav.Link href="#action6">Movies</Nav.Link>
                   <Nav.Link href="#action6">Contact Us</Nav.Link>
+                  {/* <Link to="contact">Contact Us</Link> */}
                   <NavDropdown
                     title="Podcast"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
