@@ -7,9 +7,14 @@ import { Card,CardGroup, Row,Col,ListGroup,} from "react-bootstrap";
 import {AiOutlineFieldTime,AiTwotoneTags,AiTwotoneCalendar,} from "react-icons/ai";
 import {MdLocationCity} from "react-icons/md";
 import {BiChevronsRight} from "react-icons/bi"
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 // import EventDetails from "../eventdetails/eventdetail";
 const EventsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <NavBar />
