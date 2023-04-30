@@ -10,7 +10,7 @@ export const Podcast = () => {
     <>
       <NavBar />
 
-      <div className="podcast-hero">
+      <section className="podcast-hero">
         <img src={Podcastimg} alt="landing img" className="img" />
         <div className="hero-text">
           <h1>
@@ -27,7 +27,7 @@ export const Podcast = () => {
     </DropdownButton>
          
         </div>
-      </div>
+      </section>
       <EpisodePodcast/>
       <Footer/>
     </>

@@ -31,7 +31,7 @@ const LandingPage = () => {
                 Kurious K - where media and entertainment come alive through
                 podcasts, movies, TV shows, newsletters, and even theme parks!
               </p>
-              <Button variant="success btn btn-lg mt-5">Read more</Button>
+              <Button variant="success btn btn-lg mt-5"><Link to="/contact">Contact Us</Link></Button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

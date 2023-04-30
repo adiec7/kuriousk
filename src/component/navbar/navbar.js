@@ -37,17 +37,11 @@ export const NavBar = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link to="/">Home</Link>
                   <Link to="/Podcast">Podcast</Link>
-                  <Link
-                    to="/events
-                "
-                  >
-                    Event
-                  </Link>
-                  <Nav.Link href="#action4">Theme park</Nav.Link>
-                  <Nav.Link href="#action5">Merchandise</Nav.Link>
-                  <Nav.Link href="#action6">Movies</Nav.Link>
-                  <Nav.Link href="#action6">Contact Us</Nav.Link>
-                  {/* <Link to="contact">Contact Us</Link> */}
+                  <Link to="/events"> Event</Link>
+                  <Link to="#action4">Theme park</Link>
+                  <Link to="#action5">Merchandise</Link>
+                  <Link to="#action6">Movies</Link>
+                  <Link to="/contact">Contact Us</Link>
                   <NavDropdown
                     title="Podcast"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

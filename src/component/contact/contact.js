@@ -1,41 +1,49 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import ContactImg from '../img/contactus.jpg'
 import NavBar from '../navbar/navbar';
 import Footer from '../footer/footer';
+import './contact.css'
 function ContactForm() {
   return (
     <>
     <NavBar/>
-    <div className="contact-container">
-      <div className="overlay">
-        <Container className='mt-5'>
+    <section className="contact-hero">
+  <div className="overlay"></div>
+  <img src={ContactImg} alt="landing img" className="img" />
+  <div className="contact-text ">
+    <h1>
+      About <span className="pageSpan">kurious k </span>media
+    </h1>
+    {/* <Button variant="info" href="#episodes" >View Episodes</Button> */}
+  </div>
+</section>
+
+        <Container className='mt-5 mb-5'>
+          <h2 className='text-center'>Write Or Visit Us Here</h2>
           <Row>
             <Col md={6}>
               <form>
                 <div className="mb-3">
-                  {/* <label htmlFor="firstName" className="form-label">First Name</label> */}
                   <input type="text" className="form-control" id="firstName" placeholder="Enter first name" />
                 </div>
                 <div className="mb-3">
-                  {/* <label htmlFor="lastName" className="form-label">Last Name</label> */}
                   <input type="text" className="form-control" id="lastName" placeholder="Enter last name" />
                 </div>
                 <div className="mb-3">
-                  {/* <label htmlFor="email" className="form-label">Email Address</label> */}
                   <input type="email" className="form-control" id="email" placeholder="Enter email address" />
                 </div>
                 <div className="mb-3">
-                  {/* <label htmlFor="phone" className="form-label">Phone Number</label> */}
                   <input type="tel" className="form-control" id="phone" placeholder="Enter phone number" />
                 </div>
                 <div className="mb-3">
-                  {/* <label htmlFor="company" className="form-label">Company</label> */}
-                  <input type="text" className="form-control" id="company" placeholder="Enter company name" />
+                  
+                  <input type="text" className="form-control" id="company" placeholder="Enter company name | or what you do" />
                 </div>
                 <div className="mb-3">
-                  {/* <label htmlFor="message" className="form-label">Message</label> */}
+                  
                   <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
                 </div>
-                <button type="submit" className="btn btn-lg">Submit</button>
+                <button type="submit" className="btn btn-lg mb-3">Submit</button>
               </form>
             </Col>
             <Col md={6}>
@@ -51,13 +59,13 @@ function ContactForm() {
             </Col>
           </Row>
         </Container>
-      </div>
-    </div>
-    <section>
-    {/* <Footer/> */}
-    </section>
+    <Footer/>
     </>
   );
 }
 
+
+
+
 export default ContactForm;
+
