@@ -44,7 +44,7 @@ function ContactForm() {
           <h2 className='text-center'>Write Or Visit Us Here</h2>
           <Row>
             <Col md={6}>
-              <form className='.form-shadow'>
+              <form  action="http://localhost:3000/submit-form" method="POST" class=".form-shadow">
                 <div className="mb-3">
                   <input type="text" className="form-control" id="firstName" placeholder="Enter first name" />
                 </div>
