@@ -12,7 +12,7 @@ const EventsPage = () => {
   const [events, ] = useState([
     {
       title: "Kurious K Startup Investor Connect Event",
-      date: "May 12, 2023",
+      date: "June 2023",
       time: "5:00pm WAT",
       location: "Lagos",
       description:
@@ -64,11 +64,11 @@ const EventsPage = () => {
       <section className="container mt-5 lead" id="events">
         <h2>Upcoming Events</h2>
 
-        <CardGroup>
-          <Row xs={1} md={2} className="g-4">
+        <CardGroup className="mb-5 justify-content-center">
+          <Row xs={1} md={2} className="g-4 justify-content-center">
             {events.map((event) => (
               <Col key={event.title}>
-                <Card className="mb-5 ">
+                <Card className="event-card h-100">
                   {event.image && (
                     <Card.Img variant="top" src={event.image} className="starimg" />
                   )}
@@ -112,7 +112,7 @@ const EventsPage = () => {
           </Row>
         </CardGroup>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

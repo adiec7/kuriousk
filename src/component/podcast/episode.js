@@ -21,7 +21,7 @@ function EpisodePodcast() {
         const xml = parser.parseFromString(data, 'application/xml');
         const items = xml.querySelectorAll('item');
         const episodeData = Array.from(items).map(item => {
-          const image = item.querySelector('itunes\\:image') ? item.querySelector('itunes\\:image').getAttribute('href') : xml.querySelector('channel image url').textContent;
+          const image = item.querySelector('spotify\\:image') ? item.querySelector('spotify\\:image').textContent : xml.querySelector('image url').textContent;
           return {
             title: item.querySelector('title').textContent,
             description: item.querySelector('description').textContent,
@@ -36,6 +36,7 @@ function EpisodePodcast() {
         setEpisodes(episodeData);
       });
   }, []);
+  
 
   const openLink = (link) => {
     window.location.href = link;
@@ -52,7 +53,7 @@ function EpisodePodcast() {
   const renderEpisodes = () => {
     return currentEpisodes.map((episode, index) => (
       <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index} >
-        <Card>
+        <Card className='h-100'>
           <Card.Img variant="top" src={episode.image} />
           <Card.Body>
             <Card.Title>{episode.title}</Card.Title>

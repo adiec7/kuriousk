@@ -44,7 +44,7 @@ function ContactForm() {
           <h2 className='text-center'>Write Or Visit Us Here</h2>
           <Row>
             <Col md={6}>
-              <form  action="http://kuriouskmedia.com/submit-form" method="POST" className=".form-shadow">
+              <form  action="https://www.kuriouskmedia.com/submit-form" method="POST" className=".form-shadow">
                 <div className="mb-3">
                   <input type="text" className="form-control" id="firstName" placeholder="Enter first name" />
                 </div>
@@ -68,7 +68,7 @@ function ContactForm() {
                 <button type="submit" className="btn btn-lg mb-3">Submit</button>
               </form>
             </Col>
-            <Col md={6}>
+            <Col md={6} >
       <iframe
         title="Map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.676928774878!2d3.478372614773368!3d6.427484995319432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b901a87dc4ce5%3A0xf8f56888045640e1!2sRoyal%20Office%20Building!5e0!3m2!1sen!2sng!4v1651095742066!5m2!1sen!2sng"
