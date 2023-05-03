@@ -1,11 +1,11 @@
 
-.contact-hero {
+.about-contact-hero {
   position: relative;
   max-height: 700px;
   overflow: hidden;
 }
 
-.contact-hero .overlay {
+.about-contact-hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,12 +14,12 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact-hero .img {
+.about-contact-hero .img {
   width: 100%;
   height: auto;
 }
 
-.contact-text {
+.about-contact-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +78,7 @@ form button {
 
 @media screen and (max-width: 700px) {
     
-  .contact-text {
+  .about-contact-tex {
     position: absolute;
     top: 70%;
     left: 40%;
@@ -87,16 +87,16 @@ form button {
     height: 100vh;
     text-transform: uppercase;
   }
-  .contact-hero .img{
+  .about-contact-hero .img{
     height: 100vh;
   }
-  .contact-hero {
+  .about-contact-hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
   }
 
-  .contact-text > p{
+  .about-contact-text > p{
     font-size: 1rem;
     text-align: left;
     font-size: .8rem;
@@ -104,7 +104,7 @@ form button {
     margin-left: 0 !important;
 
   }
-  .contact-text > h1{
+  .about-contact-text > h1{
     font-size: 1rem;
 }
 } 

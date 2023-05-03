@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button, Form, Modal} from 'react-bootstrap';
-// import {TbBrandSpotify} from 'react-icons/tb';
-// import {SiApplepodcasts,SiGooglepodcasts} from 'react-icons/si';
 import {BiChevronsRight} from "react-icons/bi";
 import AppleLogo from "../img/apple-podcasts-2447894.png";
 import SpotifyLogo from "../img/spotify-2447904.png";
 import GpodcastLogo from "../img/google-podcasts.png"
 
-
-function EpisodePodcast() {
+const EpisodePodcast = () => {
   const [episodes, setEpisodes] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [episodesPerPage] = useState(6);
-  const [searchTerm, setSearchTerm] = useState('');
   const [currentEpisode, setCurrentEpisode] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const episodesPerPage = 6;
 
   useEffect(() => {
     fetch('https://anchor.fm/s/602b72e8/podcast/rss')
@@ -23,7 +21,8 @@ function EpisodePodcast() {
         const xml = parser.parseFromString(data, 'application/xml');
         const items = xml.querySelectorAll('item');
         const episodeData = Array.from(items).map(item => {
-          const image = item.querySelector('spotify\\:image') ? item.querySelector('spotify\\:image').textContent : xml.querySelector('image url').textContent;
+          const spotifyImage = item.querySelector('spotify\\:image') ? item.querySelector('spotify\\:image').textContent : null;
+          const image = spotifyImage ? spotifyImage : xml.querySelector('image url').textContent;
           return {
             title: item.querySelector('title').textContent,
             description: item.querySelector('description').textContent,
@@ -31,20 +30,18 @@ function EpisodePodcast() {
             spotify: 'https://open.spotify.com/show/42YnMzOWb923EkxZ8kU0RV',
             itunes: "https://podcasts.apple.com/ng/podcast/kurious-k/id1573065694",
             google: "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82MDJiNzJlOC9wb2RjYXN0L3Jzcw==",
-            image: image,
+            image,
             fullInfo: item.querySelector('link').textContent
           }
         });
         setEpisodes(episodeData);
       });
   }, []);
-  
 
-  
   const indexOfLastEpisode = currentPage * episodesPerPage;
   const indexOfFirstEpisode = indexOfLastEpisode - episodesPerPage;
   const currentEpisodes = episodes.filter(episode =>
-    episode.title.toLowerCase().includes(searchTerm.toLowerCase())
+  episode.title.toLowerCase().includes(searchTerm.toLowerCase())
   ).slice(indexOfFirstEpisode, indexOfLastEpisode);
 
   

@@ -1,17 +1,17 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import ContactImg from '../img/contactus.jpg'
 import NavBar from '../navbar/navbar';
-import { TypeAnimation } from 'react-type-animation';
+// import { TypeAnimation } from 'react-type-animation';
 import Footer from '../footer/footer';
 import './contact.css'
 function ContactForm() {
   return (
     <>
     <NavBar/>
-    <section className="contact-hero">
+    <section className="about-contact-hero">
   <div className="overlay"></div>
   <img src={ContactImg} alt="landing img" className="img" />
-  <div className="contact-text ">
+  <div className="about-contact-text ">
     <h1>
       About <span className="pageSpan">kurious k </span>media
     </h1>
