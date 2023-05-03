@@ -64,7 +64,7 @@ const EpisodePodcast = () => {
             {episode.google && <a href={episode.google} target='_blank' rel="noreferrer"><img src={GpodcastLogo} alt='logo' width={40} /></a>}
 
           </Card.Footer>
-          <Modal show={currentEpisode !== null} onHide={handleClose} style={{backgroundImage: `url(${currentEpisode && currentEpisode.image})`, backgroundSize: '100%', Height: '100vh', objectFit: 'cover', opacity: '0.4'}}>
+          <Modal show={currentEpisode !== null} onHide={handleClose} >
   <Modal.Header closeButton>
     <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
   </Modal.Header>
