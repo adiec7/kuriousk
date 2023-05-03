@@ -15,18 +15,31 @@ function ContactForm() {
     <h1>
       About <span className="pageSpan">kurious k </span>media
     </h1>
-    <h4>We Have Kurious K <TypeAnimation
+    <p>Kurious K is a media and entertainment company that
+        aims to tell unique African stories through podcasts,
+        movies, TV shows, newsletters, and theme parks. 
+
+
+
+        Our mission is to showcase Africa's diverse and dynamic
+        cultures and modern perspectives to a global audience.
+        Kurious K's flagship product - Kurious K podcast focuses
+        on startup growth across Africa and has over 40 episodes
+        and listeners in 15 countries
+
+</p>
+    {/* <h4>We Have Kurious K <TypeAnimation
       sequence={[
         'Podcast', // Types 'One'
-        2000, // Waits 1s
+        4000, // Waits 1s
         'Events', // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
+        4000, // Waits 2s
         'Merch', // Types 'Three' without deleting 'Two'
-        2000,
+        4000,
         'Theme parks',
-        2000,
+        4000,
         'Studios',
-        2000,
+        4000,
         () => {
           console.log('Sequence completed'); // Place optional callbacks anywhere in the array
         }
@@ -35,16 +48,23 @@ function ContactForm() {
       cursor={true}
       repeat={Infinity}
       style={{ fontSize: '1.5rem', display: 'inline-block' }}
-    /></h4>
+    /></h4> */}
     {/* <Button variant="info" href="#episodes" >View Episodes</Button> */}
   </div>
+</section>
+
+<section>
+  <Container className='half-text conainer'>
+  
+  </Container>
+ 
 </section>
 
         <Container className='mt-5 mb-5'>
           <h2 className='text-center'>Write Or Visit Us Here</h2>
           <Row>
             <Col md={6}>
-              <form  action="https://www.kuriouskmedia.com/submit-form" method="POST" className=".form-shadow">
+              <form  action="http://localhost:3000/submit-form" method="POST" className=".form-shadow">
                 <div className="mb-3">
                   <input type="text" className="form-control" id="firstName" placeholder="Enter first name" />
                 </div>
@@ -90,4 +110,3 @@ function ContactForm() {
 
 
 export default ContactForm;
-

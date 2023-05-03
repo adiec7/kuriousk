@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button, Form, Modal} from 'react-bootstrap';
-import {TbBrandSpotify} from 'react-icons/tb';
-import {SiApplepodcasts,SiGooglepodcasts} from 'react-icons/si';
+// import {TbBrandSpotify} from 'react-icons/tb';
+// import {SiApplepodcasts,SiGooglepodcasts} from 'react-icons/si';
 import {BiChevronsRight} from "react-icons/bi";
-// import AppleLogo from "../img/apple-podcasts-2447894.png"
+import AppleLogo from "../img/apple-podcasts-2447894.png";
+import SpotifyLogo from "../img/spotify-2447904.png";
+import GpodcastLogo from "../img/google-podcasts.png"
 
 
 function EpisodePodcast() {
@@ -38,10 +40,7 @@ function EpisodePodcast() {
   }, []);
   
 
-  const openLink = (link) => {
-    window.location.href = link;
-  }
-
+  
   const indexOfLastEpisode = currentPage * episodesPerPage;
   const indexOfFirstEpisode = indexOfLastEpisode - episodesPerPage;
   const currentEpisodes = episodes.filter(episode =>
@@ -63,23 +62,25 @@ function EpisodePodcast() {
             
           </Card.Body>
           <Card.Footer>
-            <Button target='_blank' style={{ backgroundColor: '#25D77C' }} onClick={() => openLink(episode.spotify)}>< TbBrandSpotify/></Button>{' '}
-            <Button target='_blank' style={{ backgroundColor: '#C36CD8' }} onClick={() => openLink(episode.itunes)}><SiApplepodcasts/></Button>{" "}
-            {episode.google && <Button target='_blank' variant="success" onClick={() => openLink(episode.google)}><SiGooglepodcasts/></Button>}
+          {episode.spotify && <a  href={episode.spotify} target='_blank' rel="noreferrer"><img src={SpotifyLogo} alt='spotify logo' width={50} /></a>}
+          {episode.itunes && <a href={episode.itunes} target='_blank' rel="noreferrer"><img src={AppleLogo} alt='logo' width={50} /></a>}
+            {episode.google && <a href={episode.google} target='_blank' rel="noreferrer"><img src={GpodcastLogo} alt='logo' width={40} /></a>}
+
           </Card.Footer>
-          <Modal show={currentEpisode !== null} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {currentEpisode && currentEpisode.description}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="info" onClick={handleClose}>
-           Close
-          </Button>
-        </Modal.Footer>
-       </Modal>
+          <Modal show={currentEpisode !== null} onHide={handleClose} style={{backgroundImage: `url(${currentEpisode && currentEpisode.image})`, backgroundSize: '100%', Height: '100vh', objectFit: 'cover', opacity: '0.4'}}>
+  <Modal.Header closeButton>
+    <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
+  </Modal.Header>
+  <Modal.Body >
+    {currentEpisode && currentEpisode.description}
+  </Modal.Body>
+  <Modal.Footer>
+    <Button variant="info" onClick={handleClose} >
+      Close
+    </Button>
+  </Modal.Footer>
+</Modal>
+
         </Card>
       </div>
     ));
