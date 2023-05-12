@@ -44,44 +44,61 @@ const EpisodePodcast = () => {
   episode.title.toLowerCase().includes(searchTerm.toLowerCase())
   ).slice(indexOfFirstEpisode, indexOfLastEpisode);
 
-  
-
-  const renderEpisodes = () => {
-    return currentEpisodes.map((episode, index) => (
-      <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index} >
-        <Card className='h-100'>
-          <Card.Img variant="top" src={episode.image} />
+const renderEpisodes = () => {
+  return currentEpisodes.map((episode, index) => {
+    const image = episode.image || episode.spotifyImage || episode.itunesImage || episode.googleImage;
+    return (
+      <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
+        <Card className="h-100">
+          <Card.Img variant="top" src={image} />
           <Card.Body>
             <Card.Title>{episode.title}</Card.Title>
-            <Card.Text className="text-truncate" style={{maxHeight: '3em', overflow: 'hidden'}}>{episode.description}</Card.Text>
-            <Button variant="outline-info" className='mb-2' onClick={() => handleLearnMore(episode)}>Read More <BiChevronsRight/></Button>
+            <Card.Text className="text-truncate" style={{ maxHeight: "3em", overflow: "hidden" }}>
+              {episode.description}
+            </Card.Text>
+            <Button variant="outline-info" className="mb-2" onClick={() => handleLearnMore(episode)}>
+              Read More <BiChevronsRight />
+            </Button>
             <audio controls src={episode.audio} preload="none" />
-            
           </Card.Body>
           <Card.Footer>
-          {episode.spotify && <a  href={episode.spotify} target='_blank' rel="noreferrer"><img src={SpotifyLogo} alt='spotify logo' width={50} /></a>}
-          {episode.itunes && <a href={episode.itunes} target='_blank' rel="noreferrer"><img src={AppleLogo} alt='logo' width={50} /></a>}
-            {episode.google && <a href={episode.google} target='_blank' rel="noreferrer"><img src={GpodcastLogo} alt='logo' width={40} /></a>}
-
+            {episode.spotify && (
+              <a href={episode.spotify} target="_blank" rel="noreferrer">
+                <img src={SpotifyLogo} alt="spotify logo" width={50} />
+              </a>
+            )}
+            {episode.itunes && (
+              <a href={episode.itunes} target="_blank" rel="noreferrer">
+                <img src={AppleLogo} alt="itunes logo" width={50} />
+              </a>
+            )}
+            {episode.google && (
+              <a href={episode.google} target="_blank" rel="noreferrer">
+                <img src={GpodcastLogo} alt="google logo" width={40} />
+              </a>
+            )}
           </Card.Footer>
-          <Modal show={currentEpisode !== null} onHide={handleClose} >
-  <Modal.Header closeButton>
-    <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
-  </Modal.Header>
-  <Modal.Body >
-    {currentEpisode && currentEpisode.description}
-  </Modal.Body>
-  <Modal.Footer>
-    <Button variant="info" onClick={handleClose} >
-      Close
-    </Button>
-  </Modal.Footer>
-</Modal>
-
+          <Modal show={currentEpisode !== null} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>{currentEpisode && currentEpisode.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>{currentEpisode && currentEpisode.description}</Modal.Body>
+            <Modal.Footer>
+              <Button variant="info" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </Card>
       </div>
-    ));
-  }
+    );
+  });
+};
+
+
+
+
+
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -123,3 +140,6 @@ const EpisodePodcast = () => {
 }
 
 export default EpisodePodcast;
+
+
+
